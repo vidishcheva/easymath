@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9FFDB8</color>
+    <color name="colorAccent">#FFFF33</color>
+    <color name="windowBackground">#EBFFF0</color>
+    <color name="dividers">#83FFA4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGreen">#00FF80</color>
+    <color name="black">#000000</color>
+    <color name="pink">#CC00CC</color>
+    <color name="lightPink">#FF00FF</color>
+    <color name="blue">#0000FF</color>
+    <color name="lightBlue">#0080FF</color>
+    <color name="yellow">#FFFF33</color>
+    <color name="lightYellow">#FFFF99</color>
+</resources>

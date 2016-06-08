@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="big_text_size">26sp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_left">12dp</dimen>
+    <dimen name="edit_text_trig">150dp</dimen>
+    <dimen name="info">20sp</dimen>
+    <dimen name="edit_height_log">72dp</dimen>
+    <dimen name="edit_text_sub">75dp</dimen>
+    <dimen name="text_size_sub">18sp</dimen>
+</resources>

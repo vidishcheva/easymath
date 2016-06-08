@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_panel_triangle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:layout_marginLeft="@dimen/fab_margin">
+        <TextView
+            android:id="@+id/rules_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size"
+            android:text="@string/triangle_formulas"
+            android:layout_gravity="right|top" />
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground">
+        <GridLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/triangle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:columnCount="4"
+            android:background="@color/windowBackground"
+            android:fadeScrollbars="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            tools:context="a.vidishcheva.easymath.activities.Triangle"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/triangle_image"
+                android:src="@mipmap/triangle"
+                android:layout_columnSpan="2"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/triangle_todo"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_todo"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_columnSpan="2"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_AB"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_ab"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_a"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_a"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_BC"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_bc"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_b"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_b"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_AC"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_ac"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="@string/triangle_c"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/angle_c"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:maxLength="10"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="P "
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_triangle"
+                android:id="@+id/angle_p"
+                android:inputType="numberSigned|numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="S"
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_triangle"
+                android:id="@+id/angle_s"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_count"
+                android:textSize="@dimen/text_size"
+                android:onClick="onClickTriangle"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_columnSpan="2"
+                android:id="@+id/button_count"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_clear"
+                android:textSize="@dimen/text_size"
+                android:onClick="onClickTriangleClear"
+                android:layout_columnSpan="2"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:id="@+id/button_clear"/>
+        </GridLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SlidingPaneLayout>

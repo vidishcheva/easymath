@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_panel_circle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:id="@+id/v_scroll"
+        android:scrollbarStyle="outsideInset"
+        android:fadeScrollbars="false"
+        android:layout_marginLeft="@dimen/fab_margin">
+        <TextView
+            android:id="@+id/rules_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/circle_formulas"
+            android:layout_gravity="left|top"
+            android:textSize="@dimen/info" />
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <GridLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/circle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:columnCount="4"
+            android:background="@color/windowBackground"
+            android:fadeScrollbars="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            tools:context="a.vidishcheva.easymath.activities.Circle"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/circle_image"
+                android:layout_columnSpan="2"
+                android:src="@mipmap/circle" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/circle_todo"
+                android:textSize="@dimen/text_size"
+                android:text="@string/circle_todo"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_columnSpan="2"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="r "
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/circle_r"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:maxLength="10"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="d "
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/circle_d"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:maxLength="10"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="P "
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/circle_p"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:maxLength="10"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:text="S "
+                android:layout_marginBottom="@dimen/margin_bottom" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/edit_text_trig"
+                android:id="@+id/circle_s"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_size"
+                android:hint="0"
+                android:maxLength="10"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_count"
+                android:text="@string/button_count"
+                android:textSize="@dimen/text_size"
+                android:onClick="onClickCircle"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_columnSpan="2"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_clear"
+                android:text="@string/button_clear"
+                android:textSize="@dimen/text_size"
+                android:onClick="onClickCircleClear"
+                android:layout_columnSpan="2"
+                android:layout_marginBottom="@dimen/margin_bottom"/>
+        </GridLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SlidingPaneLayout>

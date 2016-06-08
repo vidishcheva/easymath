@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">EasyMath</string>
+    <string name="language">Language</string>
+    <string-array name="first_menu">
+        <item>Algebra</item>
+        <item>Geometry</item>
+        <item>Trigonometry</item>
+    </string-array>
+    <string-array name="math">
+        <item>Solution of equations</item>
+        <item>Logarithms</item>
+       <!-- <item>Experimental lab</item>-->
+    </string-array>
+    <string-array name="geom">
+        <item>Solution of triangles</item>
+        <item>Circle</item>
+    </string-array>
+    <string-array name="trig">
+        <item>Angles</item>
+    </string-array>
+    <string name="title_activity_trigonometry">Angles</string>
+    <string name="angle_grad">&#8736; , &#176;</string>
+    <string name="angle_rad">&#8736; , rad</string>
+    <string name="cos">Cos</string>
+    <string name="sin">Sin</string>
+    <string name="tg">Tg</string>
+    <string name="ctg">Ctg</string>
+    <string name="sec">Sec</string>
+    <string name="cosec">Cosec</string>
+    <string name="trig_formulas">
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Trigonometric functions</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020sin<sup>2</sup><i>x</i> + cos<sup>2</sup><i>x</i> = 1 \n
+        \u0020\u0020\u0020\u0020\u0020tg<i>x</i> = sin<i>x</i>/cos<i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020ctg<i>x</i> = cos<i>x</i>/sin<i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020tg<i>x</i>*ctg<i>x</i> = 1 \n
+        \u0020\u0020\u0020\u0020\u0020tg<sup>2</sup><i>x</i> + 1 = 1/cos<sup>2</sup><i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020ctg<sup>2</sup><i>x</i> + 1 =  1/sin<sup>2</sup><i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin(α + β) = sinα cosβ + cosα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020cos(α + β) = cosα cosβ - sinα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020tg(α + β) = (tgα + tgβ) / (1 - tgα tgβ) \n
+        \u0020\u0020\u0020\u0020\u0020ctg(α + β) = (ctgα ctgβ - 1) / (ctgα + ctgβ) \n
+        \u0020\u0020\u0020\u0020\u0020sin(α - β) = sinα cosβ - cosα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020cos(α - β) = cosα cosβ + sinα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020tg(α - β) = (tgα - tgβ) / (1 + tgα tgβ) \n
+        \u0020\u0020\u0020\u0020\u0020ctg(α - β) = (ctgα ctgβ + 1) / (ctgα - ctgβ) \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sinα + sinβ = 2sin((α + β)/2) * cos((α - β)/2) \n
+        \u0020\u0020\u0020\u0020\u0020cosα + cosβ = 2cos((α + β)/2) * cos((α - β)/2) \n
+        \u0020\u0020\u0020\u0020\u0020(sinα + cosα)<sup>2</sup> = 1 + sin2α \n
+        \u0020\u0020\u0020\u0020\u0020tgα + tgβ = sin(α + β) / cosα cosβ \n
+        \u0020\u0020\u0020\u0020\u0020ctgα + ctgβ = sin(α + β) / sinα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sinα - sinβ = 2sin((α - β)/2) * cos((α + β)/2) \n
+        \u0020\u0020\u0020\u0020\u0020cosα - cosβ = -2sin((α + β)/2) * sin((α - β)/2) \n
+        \u0020\u0020\u0020\u0020\u0020(sinα - cosα)<sup>2</sup> = 1 - sin2α   \n
+        \u0020\u0020\u0020\u0020\u0020tgα - tgβ = sin(α - β) / cosα cosβ \n
+        \u0020\u0020\u0020\u0020\u0020ctgα - ctgβ = –sin(α - β) / sinα sinβ \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sinα * sinβ = (cos(α - β) - cos(α + β)) / 2  \n
+        \u0020\u0020\u0020\u0020\u0020sinα * cosβ = (sin(α - β) + sin(α + β)) / 2  \n
+        \u0020\u0020\u0020\u0020\u0020cosα * cosβ = (cos(α - β) + cos(α + β)) / 2  \n
+        \u0020\u0020\u0020\u0020\u0020tgα * tgβ = (cos(α - β) - cos(α + β)) / (cos(α - β) + cos(α + β)) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = (tgα + tgβ) / (ctgα + ctgβ) \n
+        \u0020\u0020\u0020\u0020\u0020ctgα * ctgβ = (cos(α - β) + cos(α + β)) / (cos(α - β) - cos(α + β)) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = (ctgα + ctgβ) / (tgα + tgβ)  \n
+        \u0020\u0020\u0020\u0020\u0020tgα * ctgβ = (sin(α - β) + sin(α + β)) / (sin(α + β) - sin(α - β)) \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin2<i>x</i> = 2sin<i>x</i> cos<i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020sin2<i>x</i> = 2tg<i>x</i> / (1 + tg<sup>2</sup><i>x</i>) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 2ctg<i>x</i> / (1 + ctg<sup>2</sup><i>x</i>) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 2 / (tg<i>x</i> + ctg<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020cos2<i>x</i> = cos<sup>2</sup><i>x</i> - sin<sup>2</sup><i>x</i> = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 2cos<sup>2</sup><i>x</i> - 1 = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 1 - 2sin<sup>2</sup><i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020cos2<i>x</i> = (1 - tg<sup>2</sup><i>x</i>) / (1 + tg<sup>2</sup><i>x</i>) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = (ctg<sup>2</sup><i>x</i> - 1) / (ctg<sup>2</sup><i>x</i> + 1) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = (ctg<i>x</i> - tg<i>x</i>) / (ctg<i>x</i> + tg<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020tg2<i>x</i> = 2tg<i>x</i> / (1 - tg2<sup>2</sup><i>x</i>) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 2ctg<i>x</i> / (ctg<sup>2</sup><i>x</i> - 1) = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = 2 / (ctg<i>x</i> - tg<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020ctg2<i>x</i> = (ctg<sup>2</sup><i>x</i> - 1) / 2ctg<i>x</i> = \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 = (ctg<i>x</i> - tg<i>x</i>) / 2 \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin3<i>x</i> = 3sin<i>x</i> - 4sin<sup>3</sup><i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020cos3<i>x</i> = 4cos<sup>3</sup><i>x</i> - 3cos<i>x</i> \n
+        \u0020\u0020\u0020\u0020\u0020tg3<i>x</i> = (3tg<i>x</i> - tg<sup>3</sup><i>x</i>) / (1 - 3tg<sup>2</sup><i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020ctg3<i>x</i> = (ctg<sup>3</sup><i>x</i> - 3ctg<i>x</i>) / (3ctg<sup>2</sup><i>x</i> - 1) \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin<sup>2</sup><i>x</i> = (1 - cos2<i>x</i>) / 2 \n
+        \u0020\u0020\u0020\u0020\u0020cos<sup>2</sup><i>x</i> = (1 + cos2<i>x</i>) / 2 \n
+        \u0020\u0020\u0020\u0020\u0020tg<sup>2</sup><i>x</i> = (1 - cos2<i>x</i>) / (1 + cos2<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020ctg<sup>2</sup><i>x</i> = (1 + cos2<i>x</i>) / (1 - cos2<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020sin<sup>2</sup>(<i>x</i>/2) = (1 - cos<i>x</i>) / 2 \n
+        \u0020\u0020\u0020\u0020\u0020cos<sup>2</sup>(<i>x</i>/2) = (1 + cos<i>x</i>) / 2 \n
+        \u0020\u0020\u0020\u0020\u0020tg<sup>2</sup>(<i>x</i>/2) = (1 - cos<i>x</i>) / (1 + cos<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020ctg<sup>2</sup>(<i>x</i>/2) = (1 + cos<i>x</i>) / (1 - cos<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin<sup>3</sup><i>x</i> = (3sin<i>x</i> - sin3<i>x</i>) / 4 \n
+        \u0020\u0020\u0020\u0020\u0020cos<sup>3</sup><i>x</i> = (3cos<i>x</i> + cos3<i>x</i>) / 4 \n
+        \u0020\u0020\u0020\u0020\u0020tg<sup>3</sup><i>x</i> = (3sin<i>x</i> - sin3<i>x</i>) / (3cos<i>x</i> + cos3<i>x</i>) \n
+        \u0020\u0020\u0020\u0020\u0020ctg<sup>3</sup><i>x</i> = (3cos<i>x</i> + cos3<i>x</i>) / (3sin<i>x</i> - sin3<i>x</i>) \n
+
+    </string>
+    <string name="button_count">Count!</string>
+    <string name="button_clear">Clear</string>
+    <string name="title_activity_triangle">Solution of triangle</string>
+    <string name="triangle_formulas">
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Functions</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020&#8736;a+&#8736;b+&#8736;c = 180&#176;  \n
+        \u0020\u0020\u0020\u0020\u0020P = AB+BC+AC  \n
+        \u0020\u0020\u0020\u0020\u0020S = &#8730;(p (p−AB) (p−BC) (p−AC)) \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 where p=(AB+BC+AC)/2  \n
+        \u0020\u0020\u0020\u0020\u0020Law of cosines: \n
+        \u0020\u0020\u0020\u0020\u0020AB<sup>2</sup> = BC<sup>2</sup> + AC<sup>2</sup> - 2*BC*AC*cos c \n
+        \u0020\u0020\u0020\u0020\u0020Law of sines: \n
+        \u0020\u0020\u0020\u0020\u0020AB/sin c = BC/sin a = AC/sin b = d \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 where d is the diameter of the triangle&#8217;s circumcircle. \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n
+        \u0020\u0020\u0020\u0020\u0020sin(a+b) = sin c \n
+        \u0020\u0020\u0020\u0020\u0020cos(a+b) = - cos c \n
+    </string>
+    <string name="triangle_todo">Input 3 values and click &#8220;Count!&#8221; (The result is rounded to three places to the right of the decimal point.)</string>
+    <string name="triangle_AB">AB =</string>
+    <string name="triangle_BC">BC =</string>
+    <string name="triangle_AC">AC =</string>
+    <string name="triangle_a">&#8736; a =</string>
+    <string name="triangle_b">&#8736; b =</string>
+    <string name="triangle_c">&#8736; c =</string>
+    <string name="not_exist">Triangle does not exist</string>
+    <string name="not_exist_but">Input only 3 values</string>
+    <string name="infinity_triangles">There are an infinite number of triangles with such angles, there is one of them</string>
+    <string name="title_activity_logarithm">Logarithm</string>
+    <string name="log_todo">Insert 2 values for log or 1 for ln and click &#8220;Count!&#8221;</string>
+    <string name="log_wrong">Base of logarithm should be >0 and != 1</string>
+    <string name="log_correct">correct</string>
+    <string name="log_not_log">Input only 2 values</string>
+    <string name="log_not_ln">Input only 1 value</string>
+    <string name="log">log</string>
+    <string name="ln">ln<sub>e</sub></string>
+    <string name="log_formulas">
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Properties of logarithms</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020log<sub>a</sub>N = x &#8660;  a<sup>x</sup> = N \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 where a&#62;0, a&#8800;1 \n
+        \u0020\u0020\u0020\u0020\u0020ln N = log<sub>e</sub>N , \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 where e &#8776; 2.718281828 - Eulerian number \n
+        \u0020\u0020\u0020\u0020\u0020___________________________________ \n\n
+        \u0020\u0020\u0020\u0020\u0020log<sub>a</sub>a = 1 \n
+        \u0020\u0020\u0020\u0020\u0020log<sub>a</sub>1 = 0 \n
+        \u0020\u0020\u0020\u0020\u0020log(a*b) = log a + log b \n
+        \u0020\u0020\u0020\u0020\u0020log(a/b) = log a - log b \n
+        \u0020\u0020\u0020\u0020\u0020log(a<sup>b</sup>) = b * log a \n
+
+    </string>
+    <string name="title_activity_equations">Solution of equations</string>
+    <string name="quad_eq">Quadratic Equation</string>
+    <string name="bi_quad_eq">_____________________________ \n
+        Biquadratic Equation</string>
+    <string name="cub_eq">_____________________________ \n
+        Cubic Equation</string>
+    <string name="eq_formulas">
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Quadratic Equation</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020ax<sub>2</sub>+bx+c = 0  \n
+        \u0020\u0020\u0020\u0020\u0020D = b<sub>2</sub>-4ac   \n
+        \u0020\u0020\u0020\u0020\u0020D&#62;0   \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020x<sup>1</sup> = (-b + &#8730;D)/2a  \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020x<sup>2</sup> = (-b - &#8730;D)/2a  \n
+        \u0020\u0020\u0020\u0020\u0020D=0   \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020x<sup>1</sup>=x<sup>2</sup> = -b/2a  \n
+        \u0020\u0020\u0020\u0020\u0020D&#60;0  \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Equation has no solution  \n\n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Biquadratic Equation</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020ax<sub>4</sub>+bx<sub>2</sub>+c = 0  \n
+        \u0020\u0020\u0020\u0020\u0020solve equation with ay<sub>2</sub>+by+c=0 ,   \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 where y = x<sub>2</sub> \n
+        \u0020\u0020\u0020\u0020\u0020 x = &#8730;y \n
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Equation may have 0, 2 or 4 solutions  \n
+    </string>
+    <string name="qe_first_num">X<sup>2</sup> + </string>
+    <string name="qe_second_num">X  + </string>
+    <string name="bi_first_num">X<sup>4</sup> + </string>
+    <string name="cub_first_num">X<sup>3</sup> + </string>
+    <string name="eq_todo">Insert all values and click &#8220;Count!&#8221;</string>
+    <string name="x1">X<sub>1</sub> = </string>
+    <string name="x2">X<sub>2</sub> = </string>
+    <string name="x3">X<sub>3</sub> = </string>
+    <string name="x4">X<sub>4</sub> = </string>
+    <string name="no_solution">This equation has no solution</string>
+    <string name="not_an_eq">Insert more values</string>
+    <string name="title_activity_one_power_equation">OnePowerEquation</string>
+    <string name="one_rules">Here you can insert any equation that does not fit to the section Solution of equation. The section is under development so, unfortunately, we can not guarantee that you will receive the correct solution to any equation but
+you are always welcome to try. Just do not forget to recheck</string>
+    <string name="title_activity_circle">Circle</string>
+    <string name="circle_todo">Input one value and click &#8220;Count!&#8221;</string>
+    <string name="circle_formulas">
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020<b>Functions</b>  \n\n
+        \u0020\u0020\u0020\u0020\u0020d = 2r \n
+        \u0020\u0020\u0020\u0020\u0020P = 2&#960;R \n
+        \u0020\u0020\u0020\u0020\u0020S = &#960;R<sup>2</sup> \n
+        \u0020\u0020\u0020\u0020\u0020&#960; = P/d = 3,1415926535897932 \n
+
+    </string>
+    <string name="circle_incorrect_input">Input only one value</string>
+</resources>
